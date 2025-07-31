@@ -17,7 +17,7 @@ A Medical Subject Headings (MeSH) term search tool built using:
 
 ---
 
-## 🛠️ How to Run
+🛠️ How to Run
 
 1. Start MySQL and Import the Database
 
