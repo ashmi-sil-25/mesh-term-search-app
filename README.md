@@ -32,6 +32,8 @@ CREATE TABLE mesh_terms_2 (
     DescriptorName VARCHAR(255),
     Synonyms VARCHAR(255)
 );
+```
+
 ➡️ How to get data:
 Download from the official MeSH site:
 🔗 https://www.nlm.nih.gov/mesh/meshhome.html
