@@ -1,4 +1,4 @@
-# 🔍 MeSH Term Search App
+🔍 MeSH Term Search App
 
 A Medical Subject Headings (MeSH) term search tool built using:
 - 🚀 **FastAPI** (backend API)
@@ -7,7 +7,7 @@ A Medical Subject Headings (MeSH) term search tool built using:
 
 ---
 
-## 🧩 Features
+🧩 Features
 
 - 🔎 Search MeSH terms using prefix-based input
 - ⚡ FastAPI for efficient backend APIs
@@ -37,7 +37,9 @@ Download from the official MeSH site:
 🔗 https://www.nlm.nih.gov/mesh/meshhome.html
 (Recommended file: desc2024.xml or latest)
 
-2. Install Dependencies
+---
+
+### 2. Install Dependencies
 (Optional but recommended) Create a virtual environment:
 python -m venv venv
 source venv/bin/activate     # Windows: venv\Scripts\activate
