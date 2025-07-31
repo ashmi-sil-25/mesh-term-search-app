@@ -1,4 +1,4 @@
-🔍 MeSH Term Search App
+# 🔍 MeSH Term Search App
 
 A Medical Subject Headings (MeSH) term search tool built using:
 - 🚀 **FastAPI** (backend API)
@@ -7,7 +7,7 @@ A Medical Subject Headings (MeSH) term search tool built using:
 
 ---
 
-🧩 Features
+## 🧩 Features
 
 - 🔎 Search MeSH terms using prefix-based input
 - ⚡ FastAPI for efficient backend APIs
@@ -17,10 +17,9 @@ A Medical Subject Headings (MeSH) term search tool built using:
 
 ---
 
-🛠️ How to Run
+## 🛠️ How to Run
 
-1. Start MySQL and Import the Database
-
+### 1. Start MySQL and Import the Database
 Make sure MySQL is installed and running.
 
 ```sql
@@ -43,9 +42,10 @@ Download from the official MeSH site:
 
 ### 2. Install Dependencies
 (Optional but recommended) Create a virtual environment:
+```bash
 python -m venv venv
 source venv/bin/activate     # Windows: venv\Scripts\activate
-
+```
 Install all Python requirements:
 pip install -r requirements.txt
 
