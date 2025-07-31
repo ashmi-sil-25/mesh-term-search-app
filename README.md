@@ -47,30 +47,35 @@ python -m venv venv
 source venv/bin/activate     # Windows: venv\Scripts\activate
 ```
 Install all Python requirements:
+C
 pip install -r requirements.txt
+```
 
-3. Run the FastAPI Backend
+### 3. Run the FastAPI Backend
 In one terminal:
+```bash
 uvicorn main:app --reload
+```
 API root: http://127.0.0.1:8000/
-
 Swagger docs: http://127.0.0.1:8000/docs
 
-4. Run the Streamlit Frontend
+### 4. Run the Streamlit Frontend
 In another terminal:
+```bash
 streamlit run app.py
+```
 Opens on: http://localhost:8501
 
-🧬 Database Source (MeSH)
+### 🧬 Database Source (MeSH)
 To use the app, your MySQL table mesh_terms_2 should contain:
-DescriptorName	Synonyms
+**DescriptorName	Synonyms**
 Cardiovascular Agents	Cardio Drugs
 Cardiology	Heart Medicine
 
-🔄 Optional: Convert XML to CSV
+### 🔄 Optional: Convert XML to CSV
 You may use a Python script to extract DescriptorName and Synonyms from desc2024.xml.
 
-📦 Import CSV into MySQL
+### 📦 Import CSV into MySQL
 LOAD DATA INFILE 'path/to/your/mesh_terms.csv'
 INTO TABLE mesh_terms_2
 FIELDS TERMINATED BY ',' 
@@ -78,7 +83,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-💬 Example API Request
+### 💬 Example API Request
 Endpoint:
 GET /search?term=cardio
 
@@ -88,14 +93,14 @@ Response:
   {"term": "Cardio Drugs", "type": "EntryTerm"}
 ]
 
-🧰 Tech Stack
+### 🧰 Tech Stack
 FastAPI — for backend APIs
 Streamlit — for frontend UI
 MySQL — relational database
 Uvicorn — ASGI server for FastAPI
 
-🙋‍♀️ Author
-Made with ❤️ by Ashmi Sil
+## 🙋‍♀️ Author
+### Made with ❤️ by Ashmi Sil
 
 CSE Student | Project-based Learner | Loves clean UI and meaningful tech
 
